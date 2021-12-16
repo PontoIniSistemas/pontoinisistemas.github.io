@@ -537,12 +537,19 @@ a.the-title:hover {
 .text-primary {
   color: #E31913;
 }
+
 .text-primary:visited {
   color: #E31913;
 }
 
 .text-second {
-  color: #006797;
+  color: #006797;   
+}
+
+.text-banner {
+  color: #e31913;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.59);
 }
 
 .section-padd {
@@ -1523,7 +1530,7 @@ ul.info-list.info_on_right_side li:last-child {
 }
 .header-style-1 ul.info-list li strong {
   font-weight: 600;
-  color: #fff;
+  color: #006797;
 }
 .header-style-1 ul.info-list li .font-size18 {
   font-size: 18px;
@@ -1631,8 +1638,12 @@ ul.info-list.info_on_right_side li:last-child {
     top: 32px;
   }
 
+  .main-header-top {
+    background: white;    
+  }
+
   .sticky-header.sticked .header-topbar, .sticky-header.sticked .main-header-top {
-    display: none;
+    display: none;]
   }
 
   body.logged-in.admin-bar .header-fixed {
@@ -2028,11 +2039,11 @@ ul.info-list.info_on_right_side li:last-child {
 }
 /* Blue Color */
 .mobile-header-blue .header_mobile .mlogo_wrapper {
-  background-color: #006797;
+  /* background-color: #006797; */
 }
 
 .mobile-header-blue #mmenu_toggle button, .mobile-header-blue #mmenu_toggle button:before, .mobile-header-blue #mmenu_toggle button:after {
-  background: #fff;
+  background: #006797;
 }
 
 .mobile-header-blue #mmenu_toggle.active button {
@@ -4861,7 +4872,7 @@ div.line-chart .chart-legend li {
 .section-counto{
   padding-top: 80px !important;
   padding-bottom: 80px !important;
-  background-image: url(https://via.placeholder.com/1170x400);
+  background-image: url(images/info-image.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
