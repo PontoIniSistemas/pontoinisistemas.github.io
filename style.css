@@ -30,6 +30,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -549,6 +550,10 @@ a.the-title:hover {
 .text-banner {
   color: #e31913;
   text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.59);
+}
+
+.text-shadow{
   text-shadow: 2px 2px 4px rgba(0,0,0,0.59);
 }
 
@@ -2270,7 +2275,7 @@ ul.info-list.info_on_right_side li:last-child {
   padding-right: 0;
 }
 .boxed-content .section-padd {
-  padding: 95px 100px;
+  padding: 50px 100px;
 }
 
 .entry-content {
@@ -2655,8 +2660,13 @@ ul.info-list.info_on_right_side li:last-child {
 }
 .main-footer ul li a {
   position: relative;
-  padding-left: 14px;
+  padding-left: 14px;  
 }
+
+.main-footer ul li a.cursor-default { 
+  cursor: default!important;
+}
+
 .main-footer ul li a:before {
   position: absolute;
   top: -1px;
@@ -4957,7 +4967,7 @@ div.line-chart .chart-legend li {
 .custom-padd-2{
   padding-top: 189px;
   padding-bottom: 170px;
-  background: url(https://via.placeholder.com/750x543) no-repeat center;
+  background: url(images/missao.png) no-repeat center;
   background-size: cover; 
 }
 .feature-row{
