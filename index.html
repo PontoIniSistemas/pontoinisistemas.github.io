@@ -31,7 +31,7 @@
 
 <body>
     <div id="page" class="site">
-        <header id="site-header" class="site-header sticky-header mobile-header-blue">
+        <header id="site-header" class="site-header header-fixed sticky-header mobile-header-blue">
             <!-- Top bar start / class css: topbar-dark -->
             <div id="header_topbar" class="header-topbar md-hidden sm-hidden clearfix">
                 <div class="container">
@@ -126,7 +126,7 @@
                             </div>
                             <div class="tp-caption tp-resizeme font-second text-light text-shadow bolder"
                                 data-x="['left']" data-hoffset="['0','15','15','15']" data-y="center"
-                                data-voffset="['-45','-45','-45','-45']" data-width="['670','580','480','320']"
+                                data-voffset="['0','-45','-45','-45']" data-width="['670','580','480','320']"
                                 data-transform_idle="o:1;" data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;"
                                 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                                 data-start="1700" data-whitespace="['normal']" data-fontsize="['50','50','40','30']"
@@ -134,7 +134,7 @@
                                 <p>EXPERTISE, COMPROMETIMENTO e uma parceria de SUCESSO com a sua empresa.</p>
                             </div>
                             <div class="tp-caption" data-x="['left']" data-hoffset="['0','15','15','15']"
-                                data-y="bottom" data-voffset="['185','185','185','185']" data-transform_idle="o:1;"
+                                data-y="bottom" data-voffset="['140','185','185','185']" data-transform_idle="o:1;"
                                 data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;"
                                 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                                 data-start="2100">
@@ -218,10 +218,9 @@
                 </div>
             </section>
 
-            <div class="container-fluid" style="margin-top:50px; margin-bottom:50px;">
+            <div class="container-fluid" style="margin-top:50px; margin-bottom:50px;" id="section-sobre">
                 <div class="boxed-content">
-
-                    <section class="wpb_row row-fluid section-padd" id="section-sobre">
+                    <section class="wpb_row row-fluid section-padd">
                         <div class="container">
                             <div class="row">
                                 <div class="wpb_column column_container col-sm-12">
@@ -584,28 +583,28 @@
                                             <div role="form" class="wpcf7" id="wpcf7-f1989-p967-o1" lang="en-US"
                                                 dir="ltr">
                                                 <div class="screen-reader-response"></div>
-                                                <form action="#" method="post" class="wpcf7-form">
+                                                <form action="#" method="post" class="wpcf7-form" id="contact-form">
                                                     <div class="row">
                                                         <div class="col-md-6"><span
                                                                 class="wpcf7-form-control-wrap your-fname"><input
-                                                                    type="text" name="your-fname" value="" size="40"
+                                                                    type="text" name="name" value="" size="40"
                                                                     class="wpcf7-form-control" required=""
                                                                     placeholder="Nome"></span></div>
                                                         <div class="col-md-6"><span
                                                                 class="wpcf7-form-control-wrap your-subject"><input
-                                                                    type="text" name="your-subject" value="" size="40"
+                                                                    type="text" name="subject" value="" size="40"
                                                                     class="wpcf7-form-control"
                                                                     placeholder="Assunto"></span></div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6"><span
                                                                 class="wpcf7-form-control-wrap your-phone"><input
-                                                                    type="text" name="your-phone" value="" size="40"
+                                                                    type="text" name="phone" value="" size="40"
                                                                     class="wpcf7-form-control"
                                                                     placeholder="Telefone"></span></div>
                                                         <div class="col-md-6"><span
                                                                 class="wpcf7-form-control-wrap your-email"><input
-                                                                    type="email" name="your-email" value="" size="40"
+                                                                    type="email" name="email" value="" size="40"
                                                                     class="wpcf7-form-control" required=""
                                                                     placeholder="Email   "></span></div>
                                                     </div>
@@ -614,7 +613,7 @@
                                                     </div>
                                                     <div class="contact-mess"><span
                                                             class="wpcf7-form-control-wrap your-message"><textarea
-                                                                name="your-message" cols="40" rows="10"
+                                                                name="message" cols="40" rows="10"
                                                                 class="wpcf7-form-control" required=""
                                                                 placeholder="Mensagem"></textarea></span></div>
                                                     <p>
@@ -696,7 +695,7 @@
 
                         <div class="col-md-4 col-sm-6">
                             <section id="custom_html-3" class="widget_text widget widget_custom_html padding-left">
-                                <h4 class="widget-title">Company</h4>
+                                <h4 class="widget-title">Empresa</h4>
                                 <div class="textwidget custom-html-widget">
                                     <ul class="padd-left">
                                         <li><a href="#section-slider">Home</a></li>
@@ -719,7 +718,8 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="footer-copyright">
-                                .iNi Sistemas © 2022 Todos os direitos reservados.
+                                .iNi Sistemas ©
+                                <script>document.write(new Date().getFullYear())</script> Todos os direitos reservados.
                             </div>
                         </div>
                     </div>
@@ -737,6 +737,7 @@
     <!-- <script type='text/javascript' src='js/royal_preloader.min.js'></script> -->
     <script type='text/javascript' src='js/slick.min.js'></script>
     <script type='text/javascript' src='js/scripts.js'></script>
+    <script type='text/javascript' src='js/contact-form.js'></script>
     <script type='text/javascript' src='js/header-footer.js'></script>
 
     <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
