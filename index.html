@@ -31,7 +31,30 @@
 
 <body>
     <div id="page" class="site">
-        <header id="site-header" class="site-header header-fixed sticky-header mobile-header-blue">
+        <header id="site-header" class="site-header sticky-header mobile-header-blue">
+            <!-- Top bar start / class css: topbar-dark -->
+            <div id="header_topbar" class="header-topbar md-hidden sm-hidden clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+
+                            <!-- social icons -->
+                            <ul class="social-list fright social_on_right_side">
+                                <li><a href="tel:313517-8905">(31) 3517-8905</a></li>
+                                <li><a target="_blank" href="http://www.facebook.com/pontoini"
+                                        rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li><a target="_blank" href="https://www.linkedin.com/company/ponto-ini"
+                                        rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                            <!-- social icons close -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top bar close -->
             <!-- Main header start -->
             <div class="main-header md-hidden sm-hidden">
                 <div class="container">
@@ -91,7 +114,7 @@
                     <ul>
                         <li data-transition="fade" data-slotamount="10" data-masterspeed="default" data-thumb="">
                             <!--  BACKGROUND IMAGE -->
-                            <img src="images/banner-01.png" alt="" data-bgposition="center center" data-bgfit="cover"
+                            <img src="images/banner-01.png" alt="" data-bgposition="center center" data-bgfit="contain"
                                 data-bgrepeat="no-repeat" />
                             <div class="tp-caption tp-resizeme" data-x="right" data-hoffset="['0']" data-y="bottom"
                                 data-voffset="" data-width="['auto','320','auto','320']" data-transform_idle="o:1;"
@@ -115,7 +138,7 @@
                                 data-transform_in="x:100px;opacity:0;s:800;e:Power3.easeOut;"
                                 data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                                 data-start="2100">
-                                <a class="btn" href="contato.html">Contato</a>
+                                <a class="btn" href="#section-contato">Contato</a>
                             </div>
                         </li>
                     </ul>
@@ -136,10 +159,10 @@
                             <div class="column-inner">
                                 <div class="wpb_wrapper">
                                     <div class="service-box icon-box box-shadow-2 ionic ">
-                                        <i class="ion-md-medal ion-ios-medal ion-logo-medal ion-ios-medal"></i>
+                                        <i class="fa fa-briefcase"></i>
                                         <div class="content-box">
-                                            <h4>Quality Services</h4>
-                                            <p>Conubia ut aliquam cub gravida sed morbi accumsa.</p>
+                                            <h4>Serviços</h4>
+                                            <p>Consultoria de sistema com foco em processo de gestão.</p>
                                         </div>
                                     </div>
 
@@ -151,10 +174,10 @@
                             <div class="column-inner">
                                 <div class="wpb_wrapper">
                                     <div class="service-box icon-box box-shadow-2 ionic ">
-                                        <i class="ion-md-bulb ion-ios-bulb ion-logo-bulb ion-ios-bulb"></i>
+                                        <i class="fa fa-cogs"></i>
                                         <div class="content-box">
-                                            <h4>Valuable Ideas</h4>
-                                            <p>Ante pharetra posuere blandit aliquam fusce sollicitudin.</p>
+                                            <h4>Customização</h4>
+                                            <p>Expertise em linguagem de programação propietária.</p>
                                         </div>
                                     </div>
 
@@ -166,10 +189,10 @@
                             <div class="column-inner">
                                 <div class="wpb_wrapper">
                                     <div class="service-box icon-box box-shadow-2 ionic ">
-                                        <i class="ion-md-cash ion-ios-cash ion-logo-cash ion-ios-cash"></i>
+                                        <i class="fa fa-th"></i>
                                         <div class="content-box">
-                                            <h4>Budget Friendly</h4>
-                                            <p>Lacinia nisl accumsa sceleris phasellus venenatis don,</p>
+                                            <h4>Produtos</h4>
+                                            <p>Soluções web e mobile para otimizar e integrar processos.</p>
                                         </div>
                                     </div>
 
@@ -183,8 +206,8 @@
                                     <div class="service-box icon-box box-shadow-2 ionic ">
                                         <i class="ion-md-headset ion-ios-headset ion-logo-headset ion-ios-headset"></i>
                                         <div class="content-box">
-                                            <h4>Suport 24/7</h4>
-                                            <p>Etiam sollicitudin sagittis justo at ullamcorper potenti.</p>
+                                            <h4>Help Desk</h4>
+                                            <p>Simples e eficaz, oferecendo suporte ágil no dia a dia.</p>
                                         </div>
                                     </div>
 
@@ -195,7 +218,7 @@
                 </div>
             </section>
 
-            <div class="container" style="margin-top:50px; margin-bottom:50px;">
+            <div class="container-fluid" style="margin-top:50px; margin-bottom:50px;">
                 <div class="boxed-content">
 
                     <section class="wpb_row row-fluid section-padd" id="section-sobre">
@@ -279,9 +302,7 @@
                                 <div class="wpb_column column_container col-sm-12">
                                     <div class="column-inner">
                                         <div class="wpb_wrapper">
-                                            <div class="section-head">
-                                                <h2 class="section-title text-banner">Nossos 8 anos de operação</h2>
-                                            </div>
+
 
                                             <div class="empty_space_12"></div>
                                         </div>
@@ -296,7 +317,7 @@
                                                         class="ion ion-md-ion ion-ios-people ion-logo-ion ion-ios-people"></i>
                                                 </div>
                                                 <h4><span class="number text-primary bolder" data-to="100"
-                                                        data-speed="2000">100</span> <span
+                                                        data-speed="2000">123</span> <span
                                                         class="bolder text-primary">clientes</span> satisfeitos</h4>
                                             </div>
 
@@ -313,7 +334,7 @@
                                                         class="ion ion-md-ion ion-ios-document ion-logo-ion ion-ios-document"></i>
                                                 </div>
                                                 <h4><span class="number text-primary bolder" data-to="500"
-                                                        data-speed="2000">500</span> <span
+                                                        data-speed="2000">576</span> <span
                                                         class="bolder text-primary">projetos</span> finalizados</h4>
                                             </div>
 
@@ -349,7 +370,7 @@
                                         <div class="wpb_wrapper">
                                             <div class="section-head ">
                                                 <h6><span>Nossos serviços</span></h6>
-                                                <h2 class="section-title">O que trazemos para você</h2>
+                                                <h2 class="section-title">Soluções para empresas diversa</h2>
                                             </div>
                                             <div class="empty_space_30 md-hidden sm-hidden"><span
                                                     class="empty_space_inner"></span>
@@ -362,29 +383,12 @@
                                         <div class="column-inner">
                                             <div class="wpb_wrapper">
                                                 <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-umbrella ion-logo-umbrella"></i>
-                                                    <div class="content-box">
-                                                        <h4>Mapeamento e Levantamento de Necessidades</h4>
-                                                        <p>O mapeamento e levantamento de necessidades irá resultar em
-                                                            uma
-                                                            ferramenta que auxiliará no melhor entendimento do processo,
-                                                            tornando as informações mais claras e as soluções mais
-                                                            assertivas.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpb_column column_container col-sm-6 col-md-4">
-                                        <div class="column-inner">
-                                            <div class="wpb_wrapper">
-                                                <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-cube ion-logo-cube"></i>
+                                                    <i class="fa fa-cogs"></i>
                                                     <div class="content-box">
                                                         <h4>Parametrização e Customização </h4>
                                                         <p>Sistema de gestão empresarial integrado, na maioria das
-                                                            vezes, é
-                                                            disponibilizado pré-configurado. Desta forma, torna-se
+                                                            vezes, é disponibilizado pré-configurado. Desta forma,
+                                                            torna-se
                                                             necessário a realização de modificações internas para
                                                             adaptá-lo
                                                             a realidade da sua empresa.</p>
@@ -397,15 +401,34 @@
                                         <div class="column-inner">
                                             <div class="wpb_wrapper">
                                                 <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-podium ion-logo-podium"></i>
+                                                    <i class="fa fa-building"></i>
                                                     <div class="content-box">
                                                         <h4>Fábrica de Software</h4>
                                                         <p>A fábrica de software da Ponto Ini Sistemas realiza o
                                                             desenvolvimento de novos processos e adequa o seu sistema a
-                                                            realidade da sua empresa. Contamos com uma metodologia de
-                                                            trabalho bem estruturada para garantir qualidade, prazo e
-                                                            custo
-                                                            do nosso trabalho.</p>
+                                                            realidade da sua empresa. Desenvolvimento de soluções Web e
+                                                            Mobile em linguagens de programação atuais, desenvolvimento
+                                                            de soluções para Totvs
+                                                            Protheus (Advpl) e outros.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column column_container col-sm-6 col-md-4">
+                                        <div class="column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div class="service-box icon-box  ionic  hover-box">
+                                                    <i class="ion-md-list-box ion-logo-list-box"></i>
+                                                    <div class="content-box">
+                                                        <h4>Gestão de Projetos</h4>
+                                                        <p>Contamos com profissionais qualificados para gestão de
+                                                            projetos de desenvolvimento de softwares, proporcionando o
+                                                            controle de todas as fases do projeto, da concepção a
+                                                            entrega. Assumimos a manutenção dos
+                                                            artefatos do projeto, mantendo o sistema sempre em perfeito
+                                                            funcionamento.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -417,7 +440,7 @@
                                         <div class="column-inner">
                                             <div class="wpb_wrapper">
                                                 <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-list-box ion-logo-list-box"></i>
+                                                    <i class="fa fa-headphones"></i>
                                                     <div class="content-box">
                                                         <h4>Atendimento OutSourcing </h4>
                                                         <p>Podemos reforçar ainda mais a sua equipe. Contamos com
@@ -435,9 +458,9 @@
                                         <div class="column-inner">
                                             <div class="wpb_wrapper">
                                                 <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-cash ion-logo-cash"></i>
+                                                    <i class="fa fa-gavel"></i>
                                                     <div class="content-box">
-                                                        <h4>Repaginação e Revitalização de Processos </h4>
+                                                        <h4>Mapeamento e Revitalização de Processos </h4>
                                                         <p>Tem como objetivo
                                                             rever o fluxo de informações, as rotinas customizadas, as
                                                             parametrização e demais componentes para melhorar ou propor
@@ -452,65 +475,13 @@
                                         <div class="column-inner">
                                             <div class="wpb_wrapper">
                                                 <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-wallet ion-logo-wallet"></i>
+                                                    <i class="fa fa-group"></i>
                                                     <div class="content-box">
                                                         <h4>Treinamentos</h4>
                                                         <p>Ter uma equipe treinada e alinhada quanto aos processos do
                                                             sistema é essencial para o bom funcionamento do mesmo.
                                                             Oferecemos treinamento de módulos em geral para o sistema
                                                             Microsiga Protheus e treinamento da linguagem Advpl.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="wpb_column column_container col-sm-6 col-md-4">
-                                        <div class="column-inner">
-                                            <div class="wpb_wrapper">
-                                                <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-list-box ion-logo-list-box"></i>
-                                                    <div class="content-box">
-                                                        <h4>Gestão de Customizações</h4>
-                                                        <p>Este serviço consiste em
-                                                            realizar um levantamento de todas os códigos fontes de
-                                                            customizações existentes no sistema, realizar correções e
-                                                            assumir a manutenção destas rotinas, mantendo o sistema
-                                                            sempre em perfeito funcionamento.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpb_column column_container col-sm-6 col-md-4">
-                                        <div class="column-inner">
-                                            <div class="wpb_wrapper">
-                                                <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-cash ion-logo-cash"></i>
-                                                    <div class="content-box">
-                                                        <h4>Gestão de Projetos </h4>
-                                                        <p>
-                                                            Contamos com profissionais qualificados para
-                                                            gestão de projetos de desenvolvimento de softwares,
-                                                            proporcionando o controle de todas as fases do projeto, da
-                                                            concepção a entrega.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpb_column column_container col-sm-6 col-md-4">
-                                        <div class="column-inner">
-                                            <div class="wpb_wrapper">
-                                                <div class="service-box icon-box  ionic  hover-box">
-                                                    <i class="ion-md-wallet ion-logo-wallet"></i>
-                                                    <div class="content-box">
-                                                        <h4>Desenvolvimento Web</h4>
-                                                        <p>Desenvolvimento de soluções Web e Mobile em linguagens de
-                                                            programação atuais, desenvolvimento de soluções para Totvs
-                                                            Protheus (Advpl) e outros.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -525,13 +496,13 @@
                     <section class="wpb_row row-fluid section-padd no-bot" id="section-contato">
                         <div class="container">
                             <div class="row">
-                                <div class="wpb_column column_container col-sm-12 col-md-9">
+                                <div class="wpb_column column_container col-sm-12 col-md-12">
                                     <div class="column-inner">
                                         <div class="wpb_wrapper">
                                             <div class="section-head ">
-                                                <h6><span>Escritório Belo Horizonte</span></h6>
-                                                <h2 class="section-title">Av. Antônio Abrahão Caram, 664, Sala 204 - São
-                                                    José<br> Belo Horizonte/MG </h2>
+                                                <h6><span>Nosso escritório</span></h6>
+                                                <h2 class="section-title">Av. Antônio Abrahão Caram, 664, Sala 204<br>
+                                                    São José - Belo Horizonte / MG </h2>
                                             </div>
 
                                             <div class="empty_space_12"><span class="empty_space_inner"></span></div>
@@ -543,10 +514,15 @@
                                         <div class="wpb_wrapper">
                                             <div class="wpb_text_column wpb_content_element contact-info">
                                                 <div class="wpb_wrapper">
-                                                    <p><a href="mailto:falecom@pontoini.com.br"><i
-                                                                class="fa fa-envelope">falecom@pontoini.com.br</i></a><a
-                                                            href="tel:313517-8905"><i class="fa fa-phone-square">(31)
-                                                                3517-8905</i></a></p>
+                                                    <p>
+                                                        <a href="tel:313517-8905"><i class="fa fa-phone">(31)
+                                                                3517-8905</i></a>
+                                                        <a href="mailto:falecom@pontoini.com.br"><i
+                                                                class="fa fa-envelope-open-o">falecom@pontoini.com.br</i></a>
+                                                        <a href="https://wa.me/5531994022322?text=Olá,%20gostaria%20de%20mais%20informações!"
+                                                            target="_blank"><i class="fa fa-whatsapp">(31)
+                                                                99402-2322</i></a>
+                                                    </p>
 
                                                 </div>
                                             </div>
