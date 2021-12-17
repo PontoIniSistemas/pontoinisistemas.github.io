@@ -1265,7 +1265,7 @@ ul.info-list.info_on_right_side li:last-child {
   text-align: center;
   outline: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #006797;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
@@ -1641,6 +1641,10 @@ ul.info-list.info_on_right_side li:last-child {
 
   body.logged-in.admin-bar .sticky-header.sticked {
     top: 32px;
+  }
+
+  .main-header{
+    background: #FFFFFF;
   }
 
   .main-header-top {
