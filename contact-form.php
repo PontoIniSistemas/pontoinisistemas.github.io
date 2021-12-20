@@ -45,7 +45,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         ';
 
         $headers  = "MIME-Version: 1.1" . PHP_EOL;
-        $headers .= "Content-type: text/html; charset=utf-8" . PHP_EOL;
+        $headers .= "Content-type: text/html;charset=utf-8" . PHP_EOL;
         $headers .= "Content-Transfer-Encoding: 8bit" . PHP_EOL;
         $headers .= "Date: " . date('r', $_SERVER['REQUEST_TIME']) . PHP_EOL;
         $headers .= "Message-ID: <" . $_SERVER['REQUEST_TIME'] . md5($_SERVER['REQUEST_TIME']) . '@' . $_SERVER['SERVER_NAME'] . '>' . PHP_EOL;
@@ -58,7 +58,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         mail($emailTo, "=?utf-8?B?" . base64_encode($subject) . "?=", $body, $headers);
 
         $data['success'] = true;
-        $data['message'] = 'Congratulations. Your message has been sent successfully';
+        $data['message'] = 'Obrigado. Sua mensagem foi enviada com sucesso e será respondida em breve.';
     }
 
     // return all our data to an AJAX call
