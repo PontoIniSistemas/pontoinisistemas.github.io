@@ -891,7 +891,7 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: 57%;
+  max-width: 72%;
   /* Adhere to container width. */
 }
 
@@ -4478,7 +4478,7 @@ div.line-chart .chart-legend li {
 }
 
 .main-footer {
-  padding: 120px 0 80px;
+  padding: 45px 0 0px;
 }
 .main-footer h4 {
   color: #fff;
