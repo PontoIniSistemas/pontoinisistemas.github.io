@@ -891,7 +891,7 @@
                             <div class="row">
                               <div class="col-md-6">
                                 <span class="wpcf7-form-control-wrap your-phone">
-                                  <input type="text" name="telephone" id="telephone" placeholder="Telefone" class="wpcf7-form-control">
+                                  <input type="text" name="telephone" id="telephone" placeholder="Telefone" class="wpcf7-form-control sp_maskphone">
                                  </span>
                               </div>
                               <div class="col-md-6">
@@ -1145,8 +1145,23 @@
       type="text/javascript"
       src="revolution/js/extensions/revolution.extension.parallax.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.11.2/jquery.mask.min.js"
+    ></script>
     <script>
       jQuery(document).ready(function () {
+        var SPMaskBehavior = function (val) {
+          return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        spOptions = {
+          onKeyPress: function(val, e, field, options) {
+              field.mask(SPMaskBehavior.apply({}, arguments), options);
+            }
+        };
+
+        $('.sp_maskphone').mask(SPMaskBehavior, spOptions);
+
         jQuery("#revolution-slider").revolution({
           sliderType: "standard",
           delay: 7500,
