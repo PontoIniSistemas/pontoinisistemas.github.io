@@ -33,7 +33,7 @@ Ajax Contact Form
     // process the form
     $.ajax({
       type: "POST",
-      url: "https://insannity.com.br/pontoini/contact-form.php",
+      url: "contact-form.php",
       data: formData,
       dataType: "json",
       encode: true,
