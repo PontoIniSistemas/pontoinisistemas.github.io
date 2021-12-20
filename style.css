@@ -2829,7 +2829,7 @@ object {
   font-size: 12px;
   margin-bottom: 7px;
   text-transform: uppercase;
-  color: #737373;
+  color: #006797;
   letter-spacing: 1px;
 }
 .section-head.has-line h6 {
@@ -4358,8 +4358,10 @@ div.line-chart .chart-legend li {
 
   .testi-item-2 .client-img,
 .arrows-slick {
-    display: none;
+    display: none;    
   }
+
+
 
   .project-slider .project-item .inner {
     bottom: 20px;
