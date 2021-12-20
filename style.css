@@ -5035,3 +5035,9 @@ div.line-chart .chart-legend li {
 .tparrows{
   display: none!important;
 }
+
+.bg-depoimentos{
+  background-image: url("images/depoimentos-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
