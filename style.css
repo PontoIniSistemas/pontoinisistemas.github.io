@@ -1780,6 +1780,10 @@ ul.info-list.info_on_right_side li:last-child {
     -ms-transition: all 0.3s ease-out;
   }
 
+  .padding-box {
+  padding: 60px 0px;
+}
+
   .header_mobile {
     display: block;
   }
@@ -2691,7 +2695,7 @@ ul.info-list.info_on_right_side li:last-child {
   }
 
   .boxed-content .section-padd {
-    padding: 50px;
+    padding: 0px;
   }
 
   .content-area .page-pagination {
