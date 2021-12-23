@@ -337,7 +337,7 @@
       adaptiveHeight: true,
     });
     $(this).find(".testi-nav").slick({
-      slidesToShow: 3,
+      slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: ".testi-slider-2",
       autoplay: false,
